@@ -1,0 +1,15 @@
+def product_or_sum(num1, num2):
+    product = num1 * num2
+    if product <= 1000:
+        print("The result is:", product)
+    else:
+        print("The result is:", num1 + num2)
+
+# Example usage:
+num1 = 20
+num2 = 30
+product_or_sum(num1, num2)
+
+num1 = 30
+num2 = 40
+product_or_sum(num1, num2)
