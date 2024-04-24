@@ -13,3 +13,6 @@ product_or_sum(num1, num2)
 num1 = 30
 num2 = 40
 product_or_sum(num1, num2)
+
+The result is: 600
+The result is: 70
