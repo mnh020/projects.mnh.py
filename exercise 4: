@@ -1,0 +1,16 @@
+def reverse_number(number):
+    if 100 <= number <= 999:
+        reverse = int(str(number)[::-1])
+        print("The reverse is:", reverse)
+    else:
+        print("Please enter a number between 100 and 999.")
+
+# Example usage:
+number1 = 789
+reverse_number(number1)
+
+number2 = 120
+reverse_number(number2)
+
+The reverse is: 987
+The reverse is: 21
