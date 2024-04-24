@@ -10,3 +10,6 @@ check_even_odd(number1)
 
 number2 = 20
 check_even_odd(number2)
+
+The number is odd.
+The number is even.
