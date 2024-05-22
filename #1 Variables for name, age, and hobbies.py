@@ -8,3 +8,5 @@ introduction = f"My name is {name}, I am {age} years old. I enjoy {hobbies}. I a
 
 # Print the introduction
 print(introduction)
+
+My name is Michelle Horvat, I am 38 years old. I enjoy learning Python. I am originally from a small town. I used to work in different fields and am now dedicated to mastering Python programming.
