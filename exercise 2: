@@ -1,15 +1,14 @@
+# Exercise 2: Check whether a number is even or odd
 def check_even_odd(number):
     if number % 2 == 0:
         print("The number is even.")
     else:
         print("The number is odd.")
 
-# Example usage:
-number1 = 13
-check_even_odd(number1)
+# Example 1
+number = 13
+check_even_odd(number)
 
-number2 = 20
-check_even_odd(number2)
-
-The number is odd.
-The number is even.
+# Example 2
+number = 20
+check_even_odd(number)
