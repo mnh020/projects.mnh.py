@@ -1,0 +1,143 @@
+Here's a complete script that accomplishes all the tasks outlined in the prompt:
+
+```python
+# Task 1: Comprehensive Data Types and Operations
+
+# 1. Define an integer `x` with a value of 25.
+x = 25
+
+# 2. Define a float `y` with a value of 3.14.
+y = 3.14
+
+# 3. Define a string `z` with the value "Advanced Python".
+z = "Advanced Python"
+
+# 4. Define a boolean `is_active` with a value of False.
+is_active = False
+
+# Operations
+# a. Compute and print the result of `x` divided by `y`.
+result = x / y
+print("x / y =", result)
+
+# b. Convert the integer `x` to a string and concatenate it with the string `z`.
+concatenated_string = str(x) + " " + z
+print("Concatenated String:", concatenated_string)
+
+# c. Toggle the boolean value of `is_active`.
+is_active = not is_active
+print("Toggled is_active:", is_active)
+
+
+# Task 2: String Manipulations and Lists
+
+# 1. Create a string `text` with the value "Python programming is powerful and versatile."
+text = "Python programming is powerful and versatile."
+
+# a. Extract and print the substring "programming" using slicing.
+substring = text[7:18]
+print("Extracted substring:", substring)
+
+# b. Split the string into a list of words.
+words_list = text.split()
+print("List of words:", words_list)
+
+# c. Join the list of words back into a single string using a hyphen `-` as a separator.
+hyphenated_string = "-".join(words_list)
+print("Hyphenated string:", hyphenated_string)
+
+# 2. Create a list `numbers` containing the elements: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100].
+numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+# a. Use list comprehension to create a new list `squares` containing the squares of each element in `numbers`.
+squares = [n**2 for n in numbers]
+print("Squares of numbers:", squares)
+
+
+# Task 3: Tuples, Dictionaries, and Sets
+
+# 1. Create a tuple `coordinates` with the values (34.0522, -118.2437).
+coordinates = (34.0522, -118.2437)
+
+# a. Print each element of the tuple.
+print("Coordinates:", coordinates[0], coordinates[1])
+
+# 2. Create a dictionary `student` with the specified key-value pairs.
+student = {
+    'name': 'Michelle',
+    'age': 38,
+    'courses': ['Python']
+}
+
+# a. Add a new key-value pair 'graduated': False.
+student['graduated'] = False
+
+# b. Update the 'age' value to 28.
+student['age'] = 28
+
+# c. Print the dictionary.
+print("Student dictionary:", student)
+
+# 3. Create a set `unique_numbers` with the elements: {1, 2, 3, 4, 5, 5, 4, 3, 2, 1}.
+unique_numbers = {1, 2, 3, 4, 5}
+
+# a. Add the number 6 to the set.
+unique_numbers.add(6)
+
+# b. Remove the number 2 from the set.
+unique_numbers.discard(2)
+
+# c. Check if the number 3 is in the set and print the result.
+is_three_in_set = 3 in unique_numbers
+print("Is 3 in the set:", is_three_in_set)
+
+
+# Task 4: Conditional Statements and Loops
+
+# 1. Write a program that checks if a number is prime.
+def is_prime(n):
+    """Return True if n is a prime number, else False."""
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+# a. Print all prime numbers between 1 and 50.
+prime_numbers = [n for n in range(1, 51) if is_prime(n)]
+print("Prime numbers between 1 and 50:", prime_numbers)
+
+# 2. Create a list of integers from 1 to 15 and perform the specified operations.
+numbers_list = list(range(1, 16))
+
+for number in numbers_list:
+    if number % 3 == 0 and number % 5 == 0:
+        print("FizzBuzz")
+    elif number % 3 == 0:
+        print("Fizz")
+    elif number % 5 == 0:
+        print("Buzz")
+    else:
+        print(number)
+```
+
+### Explanation:
+- **Task 1:** 
+  - Defines and manipulates various data types including integer, float, string, and boolean.
+  - Performs operations such as division, string concatenation, and boolean toggling.
+
+- **Task 2:**
+  - String operations including slicing, splitting, and joining.
+  - List comprehension to create a new list containing squares of numbers.
+
+- **Task 3:**
+  - Tuple operations by printing individual elements.
+  - Dictionary operations by adding, updating, and printing key-value pairs.
+  - Set operations by adding, removing elements, and checking membership.
+
+- **Task 4:**
+  - A function to check if a number is prime and printing prime numbers within a range.
+  - Looping through a list of integers with conditional statements to print specific strings based on divisibility conditions.
+
+This script covers the various data types, operations, string manipulations, list comprehensions, tuple handling, dictionary manipulations, set operations, and both conditional statements and loops, fulfilling the specified tasks comprehensively.
